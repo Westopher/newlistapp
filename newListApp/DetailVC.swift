@@ -11,10 +11,13 @@ import UIKit
 class DetailVC: UIViewController {
   
     @IBOutlet weak var detailView: UIImageView!
+    var selectedImage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let imageToLoad = selectedImage {
+            detailView.image = UIImage(named: selectedImage!)
+        }
         
     }
     

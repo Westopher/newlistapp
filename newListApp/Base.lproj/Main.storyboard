@@ -51,7 +51,7 @@
         <!--DetailVC-->
         <scene sceneID="f6r-nd-cDe">
             <objects>
-                <viewController id="LxB-CX-xZX" customClass="DetailVC" customModule="newListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="LxB-CX-xZX" customClass="DetailVC" customModule="newListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vp2-AU-PZI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
