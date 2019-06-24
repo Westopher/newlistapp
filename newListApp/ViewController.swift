@@ -23,12 +23,14 @@ class ViewController: UITableViewController {
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
         
+        
+        
         for item in items {
             if item.hasPrefix("nssl") {
                 pictures.append(item)
             }
         }
-        print(pictures)
+        print(pictures.sorted())
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +40,7 @@ class ViewController: UITableViewController {
     //titles on list
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
-        cell.textLabel?.text = pictures[indexPath.row]
+        cell.textLabel?.text = pictures.sorted()[indexPath.row]
         return cell
     }
     
